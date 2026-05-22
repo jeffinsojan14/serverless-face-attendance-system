@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Face Attendance System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Face Attendance System</h1>
+
+        <!-- Navigation Section -->
+
+        <div class="navigation">
+
+            <a href="register.html">
+                Register Employee
+            </a>
+
+            <a href="dashboard.html">
+                Admin Dashboard
+            </a>
+
+        </div>
+
+        <!-- Camera Section -->
+
+        <div class="camera-section">
+
+            <video id="video"
+                   autoplay
+                   playsinline></video>
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button id="captureBtn">
+                Capture Face
+            </button>
+
+            <button id="uploadBtn">
+                Upload Attendance
+            </button>
+
+        </div>
+
+        <!-- Preview Section -->
+
+        <div class="preview-section">
+
+            <h3>Captured Image</h3>
+
+            <img id="previewImage">
+
+        </div>
+
+        <!-- Status Section -->
+
+        <div class="status-box">
+
+            <p id="status">
+                Waiting for attendance...
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Attendance Dashboard</h1>
+
+    <div class="filters">
+
+        <input type="text"
+               id="employeeFilter"
+               placeholder="Employee ID">
+
+        <input type="date"
+               id="dateFilter">
+
+        <button id="searchBtn">
+            Search
+        </button>
+
+    </div>
+
+    <div class="summary-cards">
+
+        <div class="card">
+            <h3>Total Present</h3>
+            <p id="presentCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Late</h3>
+            <p id="lateCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total Absent</h3>
+            <p id="absentCount">0</p>
+        </div>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+        <tr>
+            <th>Employee ID</th>
+            <th>Date</th>
+            <th>Clock In</th>
+            <th>Clock Out</th>
+            <th>Status</th>
+        </tr>
+
+        </thead>
+
+        <tbody id="attendanceTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="dashboard.js"></script>
+<script>
+    setInterval(loadAttendance, 10000);
+</script>
+
+</body>
+</html>

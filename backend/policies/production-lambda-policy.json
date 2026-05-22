@@ -1,0 +1,51 @@
+{
+  "Version": "2012-10-17",
+
+  "Statement": [
+
+    {
+      "Effect": "Allow",
+
+      "Action": [
+        "rekognition:SearchFacesByImage",
+        "rekognition:IndexFaces"
+      ],
+
+      "Resource": "*"
+    },
+
+    {
+      "Effect": "Allow",
+
+      "Action": [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:UpdateItem",
+        "dynamodb:Scan"
+      ],
+
+      "Resource": [
+        "arn:aws:dynamodb:ap-south-1:765835831322:table/Attendance",
+        "arn:aws:dynamodb:ap-south-1:765835831322:table/Employees"
+      ]
+    },
+
+    {
+      "Effect": "Allow",
+
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+
+      "Resource": [
+
+        "arn:aws:s3:::attendance-images-jfn/*",
+
+        "arn:aws:s3:::employee-registration-images-jfn/*",
+
+        "arn:aws:s3:::attendance-reports-jfn/*"
+      ]
+    }
+  ]
+}
