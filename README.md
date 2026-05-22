@@ -233,7 +233,7 @@ Workflow:
 * Real-time analytics
 * Multi-face detection
 
----
+----
 
 ## Deployment Status
 
@@ -241,5 +241,5 @@ Frontend deployment is currently hosted using Amazon S3 Static Website Hosting.
 
 CloudFront HTTPS deployment is planned as a future enhancement for secure browser camera access.
 
----
+----
 
