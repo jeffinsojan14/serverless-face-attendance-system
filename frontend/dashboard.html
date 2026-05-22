@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <title>Attendance Dashboard</title>
 
-    <link rel="stylesheet" href="dashboard.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dashboard.css">
+
 </head>
 
 <body>
@@ -17,6 +21,7 @@
 
     <h1>Attendance Dashboard</h1>
 
+    <!-- Filters -->
     <div class="filters">
 
         <input type="text"
@@ -32,6 +37,7 @@
 
     </div>
 
+    <!-- Summary Cards -->
     <div class="summary-cards">
 
         <div class="card">
@@ -51,6 +57,7 @@
 
     </div>
 
+    <!-- Attendance Table -->
     <table>
 
         <thead>
@@ -73,10 +80,13 @@
 
 </div>
 
-<script src="dashboard.js"></script>
+<!-- JavaScript -->
+<script src="./dashboard.js"></script>
+
 <script>
     setInterval(loadAttendance, 10000);
 </script>
 
 </body>
+
 </html>

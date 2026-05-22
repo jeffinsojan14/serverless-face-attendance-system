@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
     <title>Employee Registration</title>
 
-    <link rel="stylesheet" href="register.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./register.css">
+
 </head>
 
 <body>
@@ -17,27 +21,34 @@
 
     <h1>Employee Registration</h1>
 
+    <!-- Employee ID -->
     <input type="text"
            id="employeeId"
            placeholder="Employee ID">
 
+    <!-- Employee Name -->
     <input type="text"
            id="employeeName"
            placeholder="Employee Name">
 
+    <!-- Employee Image Upload -->
     <input type="file"
            id="employeeImage"
            accept="image/*">
 
+    <!-- Register Button -->
     <button id="registerBtn">
         Register Employee
     </button>
 
+    <!-- Status Message -->
     <p id="status"></p>
 
 </div>
 
-<script src="register.js"></script>
+<!-- JavaScript -->
+<script src="./register.js"></script>
 
 </body>
+
 </html>
